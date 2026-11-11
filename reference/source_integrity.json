@@ -1,0 +1,31 @@
+{
+  "description": "SHA-256 of the unchanged main-experiment core modules.",
+  "files": {
+    "cic/__init__.py": "94a3ff55573c55b9502f8b0b33d2d3501890d3f37e9b2fd6c49815aa5d345bf7",
+    "cic/base_solver.py": "6ff8c7d042d3a9c86da32e31c3d508dbd37ef636cdfc7d5856ecd7bb4bfe9be5",
+    "cic/calibration.py": "84d313c8856db31eb6ad383a6ecabcb7343b41ca9f0a1739e5c4f54a9e4d3978",
+    "cic/csv_payload.py": "8eda59f3fe797d7c9bea5858111aa72ea476509cec4d1678ae53de42e4efdb6b",
+    "cic/data.py": "beca012869e849baa9d18c11b88deabbea728f8da9c5a5a4e03c9205db858d2f",
+    "cic/device.py": "a47f0d507e3bec423696af93ec1f2352733610714a899fd7ba8306a8bd0db7d7",
+    "cic/edge_calibration.py": "68347547682cf5c122130c83826d9f076e25f6b629074a1fedac4e87572cdb3b",
+    "cic/evaluation.py": "344018066a19f69eebbecea513b54ae159b2f738189abd1e130f1d9b002d7211",
+    "cic/group_refine.py": "d80677b9c2e34e0e59a9f9bc8230bf07ef42f3028a80f9ba4960e090af9e2fc7",
+    "cic/inference.py": "186b38986d93c5309c3927a9774517837395a46806951a5d6479b3d2f5351119",
+    "cic/io.py": "350225ad83c3ce036272a6971b939e4f67eed43fcf42355563cc79aab8b718a1",
+    "cic/local_scale.py": "e41d7c07a575a9f4a065e821d1407f024d521a1fa55a7a1ed47c6c86a8f39aeb",
+    "cic/neighborhood.py": "00d6d0d4a894bf4fb3f3f2c65060363b4138174ea5c7b66432309bb2f7874632",
+    "cic/partition.py": "8864fba08381c8c266c6275d89e26e8588286c0f5d8a3eaa3b036bbe2957dac6",
+    "cic/poi_evidence.py": "6878e544ef5e7c6301218536ece172edda01a1879e4afd0a5fbc425a1ebaf42a",
+    "cic/point_relations.py": "cb41975763a3877544f0499161b716cf69e5ee14cf7deca81c18dcc49eedeeec",
+    "cic/pointwise_mlp.py": "ff01a8e0805cb85104f6eecdefb24c527e78afbdfd28d008c393e8beaa45a129",
+    "cic/preprocessing.py": "dbd28b1e5c15f0b4d9ff3b125b66419b947018430191214f1c340fb61e065e56",
+    "cic/protocol.py": "5f5adb0ec314d57648e486fcc24102172104a0ce5503e2b9f66e84140aa14966",
+    "cic/retrieval.py": "24858b56f8ae0a3a3d4541d2eba9d30c10df283876bc2975413ec8f5b7045f4e",
+    "cic/scoring.py": "c7102f2648711303c7a8a7cd9cd13f27bd94965bd692a5806ef3d1bbb89733f4",
+    "cic/signed_gaec.py": "eaa02c702a4fa6cdf4e4bc6326394f1336edf18912305f0d3eb9969ea80c94e4",
+    "cic/signed_refine.py": "690c667f294f86f048ed86e8b66b48627062fdf29c56934c795f16c38e7de5b0",
+    "cic/training.py": "eb558e90a5e0515c70185afca25e38261ee4cf51837791dac6b6564eac66016e",
+    "cic/trajectory_encoder.py": "6b09c260d63bd9ce9a46ab475ef8d52cd127519658ee48508092675804736d94"
+  },
+  "main_run_city_ast_sha256": "d03caf867ac559371bacab02a9b6d4d63e5869d9b6aafca5d655affba0035db2"
+}

@@ -1,0 +1,439 @@
+{
+  "description": "Archived formal main-experiment reference, supplied separately from newly computed outputs.",
+  "source_summary_sha256": "b8cf6d71b235660719a06bcb041439d148d2c3d6bb304491a4985f968402aa0a",
+  "experiment_kind": "formal",
+  "seed_count": 3,
+  "sample_std_ddof": 1,
+  "per_seed": [
+    {
+      "city": "Istanbul",
+      "seed": 42,
+      "kp": 500,
+      "kc": 100,
+      "G_Acc_percent": 79.61089494163424,
+      "Pairwise_Precision_percent": 78.93177820975656,
+      "Pairwise_Recall_percent": 73.7310851707739,
+      "Pairwise_F1_percent": 76.24284692417741,
+      "NMI": 0.9404642955405786,
+      "ARI": 0.7616218062224237,
+      "clusters": 440,
+      "singletons": 137,
+      "largest_cluster": 21,
+      "candidate_pairs": 455457
+    },
+    {
+      "city": "Tokyo",
+      "seed": 42,
+      "kp": 400,
+      "kc": 700,
+      "G_Acc_percent": 71.98564593301435,
+      "Pairwise_Precision_percent": 85.9477866061294,
+      "Pairwise_Recall_percent": 60.38277511961723,
+      "Pairwise_F1_percent": 70.93208430913349,
+      "NMI": 0.9253029370112354,
+      "ARI": 0.7088032783958604,
+      "clusters": 1049,
+      "singletons": 434,
+      "largest_cluster": 21,
+      "candidate_pairs": 2298711
+    },
+    {
+      "city": "Moscow",
+      "seed": 42,
+      "kp": 400,
+      "kc": 900,
+      "G_Acc_percent": 78.2741116751269,
+      "Pairwise_Precision_percent": 83.2662372517445,
+      "Pairwise_Recall_percent": 69.99435984207558,
+      "Pairwise_F1_percent": 76.05564748421892,
+      "NMI": 0.9437497474674987,
+      "ARI": 0.7600557150306866,
+      "clusters": 793,
+      "singletons": 286,
+      "largest_cluster": 22,
+      "candidate_pairs": 2329505
+    },
+    {
+      "city": "NYC",
+      "seed": 42,
+      "kp": 100,
+      "kc": 200,
+      "G_Acc_percent": 86.04166666666667,
+      "Pairwise_Precision_percent": 88.85472713297463,
+      "Pairwise_Recall_percent": 80.27777777777779,
+      "Pairwise_F1_percent": 84.34877781831447,
+      "NMI": 0.949058918688343,
+      "ARI": 0.8420808989402353,
+      "clusters": 155,
+      "singletons": 46,
+      "largest_cluster": 21,
+      "candidate_pairs": 127316
+    },
+    {
+      "city": "Istanbul",
+      "seed": 43,
+      "kp": 400,
+      "kc": 200,
+      "G_Acc_percent": 79.53307392996109,
+      "Pairwise_Precision_percent": 87.26464988364714,
+      "Pairwise_Recall_percent": 71.33592736705577,
+      "Pairwise_F1_percent": 78.50040439602265,
+      "NMI": 0.9445751633106568,
+      "ARI": 0.7843243505441507,
+      "clusters": 510,
+      "singletons": 179,
+      "largest_cluster": 18,
+      "candidate_pairs": 592523
+    },
+    {
+      "city": "Tokyo",
+      "seed": 43,
+      "kp": 400,
+      "kc": 700,
+      "G_Acc_percent": 71.7464114832536,
+      "Pairwise_Precision_percent": 85.11456135061802,
+      "Pairwise_Recall_percent": 60.037214247740565,
+      "Pairwise_F1_percent": 70.40962653532016,
+      "NMI": 0.9242603327503669,
+      "ARI": 0.7035681568403719,
+      "clusters": 1065,
+      "singletons": 463,
+      "largest_cluster": 20,
+      "candidate_pairs": 2308048
+    },
+    {
+      "city": "Moscow",
+      "seed": 43,
+      "kp": 300,
+      "kc": 1000,
+      "G_Acc_percent": 77.36040609137056,
+      "Pairwise_Precision_percent": 85.59960215970446,
+      "Pairwise_Recall_percent": 67.95826283135928,
+      "Pairwise_F1_percent": 75.76557882160597,
+      "NMI": 0.9423074220366073,
+      "ARI": 0.757164689764493,
+      "clusters": 837,
+      "singletons": 315,
+      "largest_cluster": 21,
+      "candidate_pairs": 2520397
+    },
+    {
+      "city": "NYC",
+      "seed": 43,
+      "kp": 100,
+      "kc": 200,
+      "G_Acc_percent": 86.14583333333333,
+      "Pairwise_Precision_percent": 89.03259182617693,
+      "Pairwise_Recall_percent": 79.67592592592592,
+      "Pairwise_F1_percent": 84.09479599315905,
+      "NMI": 0.9462347324608158,
+      "ARI": 0.8395254669643916,
+      "clusters": 152,
+      "singletons": 39,
+      "largest_cluster": 18,
+      "candidate_pairs": 131199
+    },
+    {
+      "city": "Istanbul",
+      "seed": 44,
+      "kp": 300,
+      "kc": 200,
+      "G_Acc_percent": 79.22178988326849,
+      "Pairwise_Precision_percent": 88.95926613519711,
+      "Pairwise_Recall_percent": 70.43666234327713,
+      "Pairwise_F1_percent": 78.62175465688641,
+      "NMI": 0.9456406395010188,
+      "ARI": 0.7855535761151048,
+      "clusters": 545,
+      "singletons": 213,
+      "largest_cluster": 19,
+      "candidate_pairs": 558083
+    },
+    {
+      "city": "Tokyo",
+      "seed": 44,
+      "kp": 600,
+      "kc": 600,
+      "G_Acc_percent": 71.48325358851675,
+      "Pairwise_Precision_percent": 86.8261140542225,
+      "Pairwise_Recall_percent": 59.25039872408293,
+      "Pairwise_F1_percent": 70.43544207798774,
+      "NMI": 0.9244545927836672,
+      "ARI": 0.7038370024429927,
+      "clusters": 1095,
+      "singletons": 480,
+      "largest_cluster": 15,
+      "candidate_pairs": 2274425
+    },
+    {
+      "city": "Moscow",
+      "seed": 44,
+      "kp": 200,
+      "kc": 1000,
+      "G_Acc_percent": 76.751269035533,
+      "Pairwise_Precision_percent": 84.66492109546387,
+      "Pairwise_Recall_percent": 67.47884940778341,
+      "Pairwise_F1_percent": 75.10122092840777,
+      "NMI": 0.9406559158556138,
+      "ARI": 0.7505065486219729,
+      "clusters": 850,
+      "singletons": 320,
+      "largest_cluster": 22,
+      "candidate_pairs": 2543699
+    },
+    {
+      "city": "NYC",
+      "seed": 44,
+      "kp": 100,
+      "kc": 200,
+      "G_Acc_percent": 88.02083333333334,
+      "Pairwise_Precision_percent": 94.79674796747967,
+      "Pairwise_Recall_percent": 80.97222222222223,
+      "Pairwise_F1_percent": 87.34082397003746,
+      "NMI": 0.9559728240641301,
+      "ARI": 0.8723040982670117,
+      "clusters": 160,
+      "singletons": 47,
+      "largest_cluster": 11,
+      "candidate_pairs": 132852
+    }
+  ],
+  "per_city": {
+    "Istanbul": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metrics": {
+        "G_Acc_percent": {
+          "mean": 79.45525291828794,
+          "sample_std": 0.20589504366261333,
+          "n": 3
+        },
+        "Pairwise_Precision_percent": {
+          "mean": 85.05189807620027,
+          "sample_std": 5.3674790586208685,
+          "n": 3
+        },
+        "Pairwise_Recall_percent": {
+          "mean": 71.83455829370227,
+          "sample_std": 1.7028740535750706,
+          "n": 3
+        },
+        "Pairwise_F1_percent": {
+          "mean": 77.78833532569548,
+          "sample_std": 1.3398068035627744,
+          "n": 3
+        },
+        "NMI": {
+          "mean": 0.9435600327840847,
+          "sample_std": 0.002733404779515884,
+          "n": 3
+        },
+        "ARI": {
+          "mean": 0.7771665776272264,
+          "sample_std": 0.013476189646808578,
+          "n": 3
+        },
+        "clusters": {
+          "mean": 498.3333333333333,
+          "sample_std": 53.46338310781813,
+          "n": 3
+        },
+        "singletons": {
+          "mean": 176.33333333333334,
+          "sample_std": 38.07011076071796,
+          "n": 3
+        },
+        "largest_cluster": {
+          "mean": 19.333333333333332,
+          "sample_std": 1.5275252316519468,
+          "n": 3
+        },
+        "candidate_pairs": {
+          "mean": 535354.3333333334,
+          "sample_std": 71303.69068521862,
+          "n": 3
+        }
+      }
+    },
+    "Tokyo": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metrics": {
+        "G_Acc_percent": {
+          "mean": 71.7384370015949,
+          "sample_std": 0.25129108862182997,
+          "n": 3
+        },
+        "Pairwise_Precision_percent": {
+          "mean": 85.96282067032331,
+          "sample_std": 0.8558753890716763,
+          "n": 3
+        },
+        "Pairwise_Recall_percent": {
+          "mean": 59.89012936381357,
+          "sample_std": 0.5803400275706272,
+          "n": 3
+        },
+        "Pairwise_F1_percent": {
+          "mean": 70.59238430748046,
+          "sample_std": 0.29447186436585715,
+          "n": 3
+        },
+        "NMI": {
+          "mean": 0.9246726208484232,
+          "sample_std": 0.0005544439457341513,
+          "n": 3
+        },
+        "ARI": {
+          "mean": 0.7054028125597417,
+          "sample_std": 0.002947956142222986,
+          "n": 3
+        },
+        "clusters": {
+          "mean": 1069.6666666666667,
+          "sample_std": 23.35237318418266,
+          "n": 3
+        },
+        "singletons": {
+          "mean": 459,
+          "sample_std": 23.259406699226016,
+          "n": 3
+        },
+        "largest_cluster": {
+          "mean": 18.666666666666668,
+          "sample_std": 3.2145502536643185,
+          "n": 3
+        },
+        "candidate_pairs": {
+          "mean": 2293728,
+          "sample_std": 17356.533323218668,
+          "n": 3
+        }
+      }
+    },
+    "Moscow": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metrics": {
+        "G_Acc_percent": {
+          "mean": 77.46192893401016,
+          "sample_std": 0.7664806533269771,
+          "n": 3
+        },
+        "Pairwise_Precision_percent": {
+          "mean": 84.51025350230428,
+          "sample_std": 1.1743464125653407,
+          "n": 3
+        },
+        "Pairwise_Recall_percent": {
+          "mean": 68.4771573604061,
+          "sample_std": 1.3356222652622365,
+          "n": 3
+        },
+        "Pairwise_F1_percent": {
+          "mean": 75.64081574474422,
+          "sample_std": 0.4892922251787711,
+          "n": 3
+        },
+        "NMI": {
+          "mean": 0.9422376951199066,
+          "sample_std": 0.0015480939547905532,
+          "n": 3
+        },
+        "ARI": {
+          "mean": 0.7559089844723842,
+          "sample_std": 0.004896860383020872,
+          "n": 3
+        },
+        "clusters": {
+          "mean": 826.6666666666666,
+          "sample_std": 29.871948937646057,
+          "n": 3
+        },
+        "singletons": {
+          "mean": 307,
+          "sample_std": 18.35755975068582,
+          "n": 3
+        },
+        "largest_cluster": {
+          "mean": 21.666666666666668,
+          "sample_std": 0.5773502691896257,
+          "n": 3
+        },
+        "candidate_pairs": {
+          "mean": 2464533.6666666665,
+          "sample_std": 117517.23880917784,
+          "n": 3
+        }
+      }
+    },
+    "NYC": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metrics": {
+        "G_Acc_percent": {
+          "mean": 86.73611111111111,
+          "sample_std": 1.113820481412883,
+          "n": 3
+        },
+        "Pairwise_Precision_percent": {
+          "mean": 90.89468897554374,
+          "sample_std": 3.38045222487806,
+          "n": 3
+        },
+        "Pairwise_Recall_percent": {
+          "mean": 80.30864197530865,
+          "sample_std": 0.6486990604007357,
+          "n": 3
+        },
+        "Pairwise_F1_percent": {
+          "mean": 85.26146592717033,
+          "sample_std": 1.8052490395246006,
+          "n": 3
+        },
+        "NMI": {
+          "mean": 0.9504221584044297,
+          "sample_std": 0.005010132125131234,
+          "n": 3
+        },
+        "ARI": {
+          "mean": 0.8513034880572129,
+          "sample_std": 0.018231889096682278,
+          "n": 3
+        },
+        "clusters": {
+          "mean": 155.66666666666666,
+          "sample_std": 4.041451884327381,
+          "n": 3
+        },
+        "singletons": {
+          "mean": 44,
+          "sample_std": 4.358898943540674,
+          "n": 3
+        },
+        "largest_cluster": {
+          "mean": 16.666666666666668,
+          "sample_std": 5.131601439446884,
+          "n": 3
+        },
+        "candidate_pairs": {
+          "mean": 130455.66666666667,
+          "sample_std": 2841.8712731813407,
+          "n": 3
+        }
+      }
+    }
+  }
+}
