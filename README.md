@@ -67,29 +67,3 @@ echo $! > main.pid
 ```bash
 python3 -u run_main.py --device cuda --cities NYC --seeds 42 --output runs/nyc_seed42
 ```
-
-
-## 读取结果
-
-| 文件 | 内容 |
-| --- | --- |
-| `runs/main/summary.txt` | 可直接阅读的逐项结果与三种子汇总 |
-| `runs/main/summary.json` | 完成数量、完整实验标记、逐项指标与汇总 |
-| `runs/main/per_seed_results.csv` | 每个城市、种子的结果 |
-| `runs/main/mean_std_results.csv` | 已完成三个种子的城市均值与样本标准差 |
-| `runs/main/progress.json` | 当前任务、完成数量或失败原因 |
-| `runs/main/environment.json` | 实际运行环境和依赖版本 |
-| `runs/main/logs/<城市>_seed<种子>.log` | 单项训练与推理日志 |
-| `runs/main/seed_42/preparation/NYC/encoder/encoder.pt` | 示例：NYC seed 42 的 Transformer 权重 |
-| `runs/main/seed_42/main/NYC/mlp/pointwise_mlp.pt` | 示例：对应 MLP 权重 |
-| `runs/main/seed_42/main/NYC/calibration/` | 示例：支持模型、14 维校准器和校准记录 |
-| `runs/main/seed_42/main/NYC/test/` | 示例：最终分组、候选边、概率及测试指标 |
-
-G-Acc、Pairwise Precision / Recall / F1 的汇总单位是百分数；标准差采用 `ddof=1`。单项 `metrics.json` 中对应指标使用 0–1 比例。NMI、ARI 保持原数值尺度。推理计时包含特征预处理、编码、召回、打分、14 维特征与分组，不包含训练、数据加载、结果写盘或指标计算。
-
-可以单独刷新汇总并与已有主实验结果核对：
-
-```bash
-python3 collect_results.py --root runs/main
-python3 compare_reference.py --run runs/main
-```
