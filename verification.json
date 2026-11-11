@@ -1,0 +1,239 @@
+{
+  "verified_at_utc": "2026-11-11T17:36:47.502733+00:00",
+  "scope": "Engineering verification of the release; the full 30/20-epoch formal CUDA experiment was not rerun here.",
+  "unchanged_original_core_modules": 25,
+  "original_training_and_protocol_preserved": true,
+  "fixed_budgets_match_all_12_reference_rows": true,
+  "unit_tests": {
+    "passed": true,
+    "count": 22
+  },
+  "end_to_end": {
+    "passed": true,
+    "scope": "ENGINEERING ONLY: 60 users per city, 2 epochs, CPU",
+    "formal_experiment_run": false,
+    "checks": [
+      {
+        "city": "Istanbul",
+        "seed": 42,
+        "passed": true
+      },
+      {
+        "city": "Istanbul",
+        "seed": 43,
+        "passed": true
+      },
+      {
+        "city": "Istanbul",
+        "seed": 44,
+        "passed": true
+      },
+      {
+        "city": "Tokyo",
+        "seed": 42,
+        "passed": true
+      },
+      {
+        "city": "Tokyo",
+        "seed": 43,
+        "passed": true
+      },
+      {
+        "city": "Tokyo",
+        "seed": 44,
+        "passed": true
+      },
+      {
+        "city": "Moscow",
+        "seed": 42,
+        "passed": true
+      },
+      {
+        "city": "Moscow",
+        "seed": 43,
+        "passed": true
+      },
+      {
+        "city": "Moscow",
+        "seed": 44,
+        "passed": true
+      },
+      {
+        "city": "NYC",
+        "seed": 42,
+        "passed": true
+      },
+      {
+        "city": "NYC",
+        "seed": 43,
+        "passed": true
+      },
+      {
+        "city": "NYC",
+        "seed": 44,
+        "passed": true
+      }
+    ],
+    "resume_preserves_all_completed_files": true,
+    "interrupted_backend_reuses_complete_encoder": true,
+    "incomplete_stage_files_preserved": true,
+    "resumed_partition_identical": true
+  },
+  "full_dataset_checks": {
+    "Istanbul": {
+      "original_csv_sha256": "0e6f7841c46de3c715aef0d31c5746b1af9520bcd06ad77fe8fa0317f7238155",
+      "roles": {
+        "neural_train": {
+          "users": 692,
+          "trajectories": 6920,
+          "points": 95803,
+          "keys_sha256": "3c914271cb7daf2f9d51eaa0b30842f2370b15324f7baccaf5ce9d1c41d4d756",
+          "identities_sha256": "d124a03f8594f2159c3a23904aebc5a63b1eb9d11eaebcb1a2b29b39e1893550"
+        },
+        "calibration": {
+          "users": 77,
+          "trajectories": 770,
+          "points": 10702,
+          "keys_sha256": "7aea54a304792934e2ec866df290a52192c648b6ee32fc0f70a30a667c18512e",
+          "identities_sha256": "776b31b39ed62ff84467dcfd3ca795534c5a9d33919b9091d0c27605f7a7dd3c"
+        },
+        "val": {
+          "users": 256,
+          "trajectories": 2560,
+          "points": 35485,
+          "keys_sha256": "3bcd2586707c5efc5bdee971dfe197a6536adcf2d0b6d2a6de7424224c489829",
+          "identities_sha256": "598ed3fa86c3e33c537b46e3400c0fff95aae5e34db660a857e48b5730a736f3"
+        },
+        "test": {
+          "users": 257,
+          "trajectories": 2570,
+          "points": 35305,
+          "keys_sha256": "e743ce66655f9888b7a12d8c191bdd13c9c36b1ad112126ef818a9883459b2dd",
+          "identities_sha256": "d38549b9cb6e5f8e97b0f1d112f31241a312ac7c7c9dfc82e0a614f9e31dd931"
+        }
+      },
+      "all_four_roles_identity_disjoint": true,
+      "parser_warnings": 0
+    },
+    "Tokyo": {
+      "original_csv_sha256": "a67f66c910e3a01874d802a3f1779549451fb64f6558fde2ee03026bff101a3f",
+      "roles": {
+        "neural_train": {
+          "users": 1129,
+          "trajectories": 11290,
+          "points": 164371,
+          "keys_sha256": "da5a41c605573baee1633857a679cecd006796d49d507e8eb5c22f5f286af5cb",
+          "identities_sha256": "5d04b248d074e49a75ab1a73544944e50cda1914842281c2d241d4a0a1767180"
+        },
+        "calibration": {
+          "users": 125,
+          "trajectories": 1250,
+          "points": 16954,
+          "keys_sha256": "800fc017095ed9b78905db67863d7eae598518b21bc195f4b34f442b1bcae82f",
+          "identities_sha256": "3a0e823c774f91e73c07fd4486e8c94d8e67df8b6d9cf643e5bb3c45011af1ad"
+        },
+        "val": {
+          "users": 418,
+          "trajectories": 4180,
+          "points": 61274,
+          "keys_sha256": "dd06773f631e32ae10706c1132740fea208a62739166697d1ac17c8d1a3374f3",
+          "identities_sha256": "98903cbcd5d9e8705c6862ea579e58f5c6c99363bc28cbd72cf368b84e9bf46b"
+        },
+        "test": {
+          "users": 418,
+          "trajectories": 4180,
+          "points": 62857,
+          "keys_sha256": "c52c54ccac4796449e1600a2ab3fbd394f41f694acf876f3c390c8c1c449fd15",
+          "identities_sha256": "7744db05809aaad43d7d914ec1d19ec1f38048abded8a489d7bfbbd456b3f54f"
+        }
+      },
+      "all_four_roles_identity_disjoint": true,
+      "parser_warnings": 0
+    },
+    "Moscow": {
+      "original_csv_sha256": "7d842159bde3bb1e650ea12b7202a2a6e3ea8f361f6146ae63db91525c0f27de",
+      "roles": {
+        "neural_train": {
+          "users": 1065,
+          "trajectories": 10650,
+          "points": 130539,
+          "keys_sha256": "0d423700fde904b6ddbeb284271eae1bca2e66b8cdad334f67fa5cb820af35c6",
+          "identities_sha256": "089d0027f267bb1aa0abd8eebcb7f7982bf3d6ebd33ee5bc1e091100896709b3"
+        },
+        "calibration": {
+          "users": 118,
+          "trajectories": 1180,
+          "points": 13991,
+          "keys_sha256": "b4f4576fd0df3dd3368d336b5799865b16544d30b79b1d857cbea4735b8b8826",
+          "identities_sha256": "c34d09153c8f6ed9ba2f82ee0ace69179892f42f9ee30fe1a1c8467697ee0e7c"
+        },
+        "val": {
+          "users": 394,
+          "trajectories": 3940,
+          "points": 49158,
+          "keys_sha256": "8108831eae92cc515d15b0d73c7fe392522c5a09835c6ab7a4a80ef877d48377",
+          "identities_sha256": "4b3d9a51b76d466ca4e8892ac5db86e5ba56fa5ef662bd5148616ca62e0f63aa"
+        },
+        "test": {
+          "users": 394,
+          "trajectories": 3940,
+          "points": 51594,
+          "keys_sha256": "a92a993b8287fb44301fc837e8b16311fbfeedd40bd3dbbde94c3c9c0a3a87a4",
+          "identities_sha256": "f5804520f63083a317ba69e686a3737a10dd6afe8f1b4b6fe424a1fe2945fdf1"
+        }
+      },
+      "all_four_roles_identity_disjoint": true,
+      "parser_warnings": 0
+    },
+    "NYC": {
+      "original_csv_sha256": "dc6338edaa9313cf04ee2e5b377810682bf11a25d6fb3f319c0acb8b7ee05f04",
+      "roles": {
+        "neural_train": {
+          "users": 258,
+          "trajectories": 2580,
+          "points": 33648,
+          "keys_sha256": "f89c8c0da381b7dcf637f1d19afdc5358a5d713862f76f2bab92a363628af0c7",
+          "identities_sha256": "b5e57239eb5c8e7f7a31f599f3a342a8d43c703ea6400867c7a44f7e911d2fcd"
+        },
+        "calibration": {
+          "users": 29,
+          "trajectories": 290,
+          "points": 4825,
+          "keys_sha256": "950785498e867e1af9f002eba5988002bc0b1f69a64af0a65d6729f60eb116d8",
+          "identities_sha256": "d7c2f88ba081d605a7e71370a322a6b831b8f9b1806c9f22b0f777582f26dc28"
+        },
+        "val": {
+          "users": 96,
+          "trajectories": 960,
+          "points": 14039,
+          "keys_sha256": "a4b08a312a7cac280d71145b5d841c6238c1e9dca59a5d4edae8f20a340a7c5c",
+          "identities_sha256": "4f7c1157e0524bbd512a84c22c9644554be3f278fb825b6a02d46f70263226e2"
+        },
+        "test": {
+          "users": 96,
+          "trajectories": 960,
+          "points": 12619,
+          "keys_sha256": "78e5f7c539d6cbe5873c03d90185d864b0461bec05818efddef54aefb9b832d1",
+          "identities_sha256": "557123945401bb1f438a507280fd342785cf10b5e6487fb9f454bd537f96d187"
+        }
+      },
+      "all_four_roles_identity_disjoint": true,
+      "parser_warnings": 0
+    }
+  },
+  "environment": {
+    "python": "3.14.3",
+    "platform": "macOS-26.4-arm64-arm-64bit-Mach-O",
+    "device": "cpu",
+    "dependencies": {
+      "torch": "2.11.0",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "pandas": "3.0.2",
+      "scikit-learn": "1.8.0",
+      "threadpoolctl": "3.6.0",
+      "psutil": null
+    }
+  },
+  "formal_cuda_results_reproduced_in_this_verification": false
+}
