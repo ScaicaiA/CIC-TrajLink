@@ -1,0 +1,158 @@
+{
+  "schema_version": 2,
+  "training": {
+    "threads": 4,
+    "max_points": 32,
+    "geo_norm": 10000.0,
+    "geo_sigma": 500.0,
+    "similarity_block_rows": 128,
+    "score_chunk": 512,
+    "score_batch": 128,
+    "encoder": {
+      "epochs": 30,
+      "batch_users": 16,
+      "temperature": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "mlp": {
+      "epochs": 20,
+      "batch_size": 128,
+      "training_pairs": 16384,
+      "validation_pairs": 4096,
+      "positive_fraction": 0.25,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "validate_every": 4
+    },
+    "support_logit_floor": -2.0,
+    "calibrator": {
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 50,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.1,
+      "early_stopping": false
+    }
+  },
+  "cities": {
+    "Istanbul": {
+      "data": "../data/Istanbul.csv",
+      "data_sha256": "0e6f7841c46de3c715aef0d31c5746b1af9520bcd06ad77fe8fa0317f7238155",
+      "expected_user_splits": {
+        "train": 769,
+        "val": 256,
+        "test": 257
+      },
+      "fixed_k": {
+        "42": {
+          "kp": 500,
+          "kc": 100
+        },
+        "43": {
+          "kp": 400,
+          "kc": 200
+        },
+        "44": {
+          "kp": 300,
+          "kc": 200
+        }
+      },
+      "archive": "../data/Istanbul.csv.gz",
+      "archive_sha256": "1885bae945c11199193829301e2f721fabc857b4fc8edc89a9166d76ee269a6e"
+    },
+    "Tokyo": {
+      "data": "../data/Tokyo.csv",
+      "data_sha256": "a67f66c910e3a01874d802a3f1779549451fb64f6558fde2ee03026bff101a3f",
+      "expected_user_splits": {
+        "train": 1254,
+        "val": 418,
+        "test": 418
+      },
+      "fixed_k": {
+        "42": {
+          "kp": 400,
+          "kc": 700
+        },
+        "43": {
+          "kp": 400,
+          "kc": 700
+        },
+        "44": {
+          "kp": 600,
+          "kc": 600
+        }
+      },
+      "archive": "../data/Tokyo.csv.gz",
+      "archive_sha256": "10dde58fbe350cf374da1d4762220c7a43097278d16e6b1251e9906d79ca0efe"
+    },
+    "Moscow": {
+      "data": "../data/Moscow.csv",
+      "data_sha256": "7d842159bde3bb1e650ea12b7202a2a6e3ea8f361f6146ae63db91525c0f27de",
+      "expected_user_splits": {
+        "train": 1183,
+        "val": 394,
+        "test": 394
+      },
+      "fixed_k": {
+        "42": {
+          "kp": 400,
+          "kc": 900
+        },
+        "43": {
+          "kp": 300,
+          "kc": 1000
+        },
+        "44": {
+          "kp": 200,
+          "kc": 1000
+        }
+      },
+      "archive": "../data/Moscow.csv.gz",
+      "archive_sha256": "61cdbb1ca54c4bac06ad38dcae0cceb776158f3eddd989c8d3d0893c58d2231a"
+    },
+    "NYC": {
+      "data": "../data/NYC.csv",
+      "data_sha256": "dc6338edaa9313cf04ee2e5b377810682bf11a25d6fb3f319c0acb8b7ee05f04",
+      "expected_user_splits": {
+        "train": 287,
+        "val": 96,
+        "test": 96
+      },
+      "fixed_k": {
+        "42": {
+          "kp": 100,
+          "kc": 200
+        },
+        "43": {
+          "kp": 100,
+          "kc": 200
+        },
+        "44": {
+          "kp": 100,
+          "kc": 200
+        }
+      },
+      "archive": "../data/NYC.csv.gz",
+      "archive_sha256": "96fcbb3d8549ca30c79e4320e2b5367ba6e7a1403056221e19d9def23415aa2e"
+    }
+  },
+  "experiment_kind": "formal",
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "protocol": {
+    "name": "source_user_calibration_90_10_v1",
+    "split_seed": 42,
+    "calibration_split_seed": 42,
+    "calibration_numerator": 1,
+    "calibration_denominator": 10,
+    "calibration_count_rounding": "nearest_half_up",
+    "validation_sampling_seed": 42,
+    "calibration_model_seed": 42,
+    "budget_rounding": 100
+  },
+  "budget_mode": "fixed_per_city_and_training_seed"
+}
